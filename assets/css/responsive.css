@@ -176,11 +176,26 @@
 		bottom: -5.4rem;
 	}
 	.pillars_card {
-		padding: 47rem 3rem;
+		padding: 4rem 3rem;
 	}
 	.footer_top {
 		justify-content: center;
 		flex-wrap: wrap;
+	}
+	.namaz_area::before {
+		display: none;
+	}
+	.service::before {
+		left: 10%;
+	}
+	.team-member-item .team-image img {
+		height: 30rem;
+	
+	}
+	.menu_wrapper .button{
+		display: block;
+		width: 24rem;
+		margin: 0 auto;
 	}
 	
 }
@@ -207,5 +222,8 @@
 	}
 	.home_area h1 {
 		font-size: 4.5rem;
+	}
+	h1, h2 {
+		font-size: 3rem;
 	}
 }
