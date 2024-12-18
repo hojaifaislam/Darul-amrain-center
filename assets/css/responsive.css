@@ -226,4 +226,8 @@
 	h1, h2 {
 		font-size: 3rem;
 	}
+	.donate_from_cart {
+		padding: 3rem;
+		width: 100%;
+	}
 }

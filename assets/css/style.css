@@ -2159,16 +2159,23 @@ footer::before {
 }
 /* ---------donate_area---------- */
 .donate_area{
-	margin: 7rem 0;
+	margin: 10rem 0 7rem;
 }
 .donate_from_cart {
-    border: 0.1rem solid var(--dark_blue);
-    padding: 3rem;
-    height: 100%;
+    /* border: 0.1rem solid var(--dark_blue); */
+    padding: 4rem;
+    /* height: 100%; */
+    width: 67rem;
+    margin: 0 auto;
 }
 .donate_from_cart ul li{
 	font-size: 2.5rem;
-	color: #444;
+	color: #fff;
+}
+.donate_area h2{
+	text-align: center;
+	color: #fff;
+	padding-top: 4rem;
 }
 .bank_wrap,
 .bkash_wrap{
@@ -2179,19 +2186,21 @@ footer::before {
 	    -ms-flex-align: center;
 	        align-items: center;
 }
-.bank_wrap img {
-    width: 9rem;
+.donate_line{
+	filter: brightness(0) invert(1);
+}
+.bank_wrap img,
+.bkash_wrap img {
+    width: 10rem;
+	height: 10rem;
     -o-object-fit: cover;
-       object-fit: cover;
-	margin-right: 3rem;
+    object-fit: cover;
+    margin-right: 3rem;
+    border: 0.1rem solid #fff;
+	border-radius: 50%;
+	padding: 0.5rem;
 }
-.bkash_wrap img{
-	width: 9rem;
-	-o-object-fit: cover;
-	   object-fit: cover;
-	margin-right: 3rem;
-}
-.donate_from_cart input,
+/* .donate_from_cart input,
 .donate_from_cart select,
 .donate_from_cart textarea{
 	width: 100%;
@@ -2225,7 +2234,7 @@ footer::before {
 .donate_from_cart select:focus,
 .donate_from_cart textarea:focus{
 	border-color: var(--color);
-}
+} */
 /*--------------- follow_area---------------- */
 .follow_area{
 	padding: 5rem 0 8rem;
@@ -2362,8 +2371,30 @@ footer::before {
 	height: auto;
 	padding: 4.5rem 3rem;
 }
-.contact_area .donate_from_cart input{
-	margin-bottom: 4.5rem;
+.donate_wrapper{
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-color: var(--color);
+	position: relative;
+	z-index: 1;
+	border-radius: 4rem;
+	overflow: hidden;
+}
+.contact_shape {
+    width: 40rem;
+	margin-bottom: -0.1rem;
+}
+.donate_wrapper::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-color: var(--color);
+    opacity: 0.8;
 }
 /* gallery_area */
 
